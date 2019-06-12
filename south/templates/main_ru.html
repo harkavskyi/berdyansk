@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/compact-gallery.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/hover-effect.css">
+    <link href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/sticky-footer-navbar.css"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/adoptive-font-size.css">
+
+
+    <title>База отдыха "Южный берег"</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <div class="mr-auto">
+                <a class="navbar-brand" href="#">База отдыха "Южный берег"</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Номера</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#lux">Полулюкс</a>
+                            <a class="dropdown-item" href="#triangle">Деревянные домики</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Рус
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="#">Рус</a>
+                            <a class="dropdown-item" href="{% url 'ukr' %}">Укр</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="../static/img/about/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="10000">
+                <img src="../static/img/about/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="10000">
+                <img src="../static/img/about/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="10000">
+                <img src="../static/img/about/4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <h1 class="adoptive-header text-center">База отдыха "Южный берег"</h1>
+        <p class="text-secondary text-monospace font-weight-bold">предлагает волшебный летний отдых на берегу Азовского
+            моря на территории уникального заповедника государственного значения Бердянская коса.</p>
+        <p class="text-secondary text-monospace font-weight-bold">Если вы хотите оздоровиться и отвлечься от
+            цивилизации, то это именно то, что вы искали. Чистый воздух, насыщенный ароматами морского бриза и степных
+            трав Приазовья, ласковое теплое море, золотистый песчаный пляж. </p>
+        <p class="text-secondary text-monospace font-weight-bold">Визитная карточка базы – комфортный, но в то же время
+            недорогой семейный отдых.</p>
+        <p class="text-secondary text-monospace font-weight-bold">На территории базы повсюду растут лиственные деревья,
+            создающие много тени. Благодаря этому отдыхающие могут спокойно проводить большую часть дня на открытом
+            воздухе, не опасаясь палящего южного солнца. </p>
+        <p class="text-secondary text-monospace font-weight-bold">Имеется собственная автостоянка, территория базы
+            отдыха находится под круглосуточным наблюдением.</p>
+        <p class="text-secondary text-monospace font-weight-bold">Небольшое количество отдыхающих даёт возможность
+            провести летний отдых в безмятежных и спокойных условиях!</p>
+        <hr>
+    </div>
+</section>
+
+<section class="gallery-block compact-gallery" id="lux">
+    <div class="container">
+        <h1 class="adoptive-header text-center pb-5">Полулюксы</h1>
+        <div class="row p-5">
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/1.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/1.jpg">
+                </a>
+            </div>
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/2.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/2.jpg">
+                </a>
+            </div>
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/3.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/3.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/4.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/4.jpg">
+                </a>
+            </div>
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/5.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/5.jpg">
+                </a>
+            </div>
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/lux/6.jpg">
+                    <img class="img-fluid image" src="../static/img/lux/6.jpg">
+                </a>
+            </div>
+        </div>
+        <p class="text-secondary text-monospace font-weight-bold">Для проживания предлагается двухэтажный, небольшой
+            деревянный коттедж, расположенный на самом берегу. В номере есть душевая кабинка, санузел, бойлер,
+            кондиционер, холодильник. Сидя на
+            веранде можно встречать рассвет, наблюдать за настроением моря. </p>
+        <hr>
+    </div>
+</section>
+
+<section class="gallery-block compact-gallery" id="triangle">
+    <div class="container">
+        <h1 class="adoptive-header text-center pb-5">Деревянные домики</h1>
+        <div class="row p-5">
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/triangle/1.jpg">
+                    <img class="img-fluid image" src="../static/img/triangle/1.jpg">
+                </a>
+            </div>
+            <div class="col-sm hovereffect">
+                <a class="lightbox" href="../static/img/triangle/2.jpg">
+                    <img class="img-fluid image" src="../static/img/triangle/2.jpg">
+                </a>
+            </div>
+        </div>
+        <p class="text-secondary text-monospace font-weight-bold">Можно разместиться и в деревянных домиках, которые
+            спрятаны под густой зеленью деревьев, что поможет легче переносить жару и просто наслаждаться природой. </p>
+        <hr>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container pb-5">
+        <h1 class="adoptive-header text-center pb-5">Контактная информация</h1>
+        <p class="text-secondary text-monospace "><b>Адрес:</b> г. Бердянск, ул. Макарова, 77</p>
+        <p class="text-secondary text-monospace "><b>Тел.:</b> (06153)9-20-03</p>
+        <p class="text-secondary text-monospace "><b>Моб.:</b> (099)260-36-65</p>
+        <p class="text-secondary text-monospace "><b>Viber:</b><a href="viber://add?number=%2B(38)0992603665">(099)260-36-65</a>
+        </p>
+        <p class="text-secondary text-monospace "><b>e-mail: </b><a target="_top" href="mailto:g_severina@ukr.net">g_severina@ukr.net</a>
+        </p>
+    </div>
+</section>
+
+<footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+        <p class="text-muted text-center">© Harkavskyi Ihor</p>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.compact-gallery', {animation: 'slideIn'});
+</script>
+</body>
+</html>
